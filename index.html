@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Clara| Portfólio Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="canvas-fundo"></canvas>
+
+  
+    <header class="navbar" id="navbar">
+        <a href="#inicio" class="logo">&lt;Maria<span>Clara</span>/&gt;</a>
+        <nav class="menu">
+            <a href="#inicio" class="active">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <div class="menu-mobile" id="menu-btn"><i class='bx bx-menu'></i></div>
+    </header>
+
+    
+    <section id="inicio" class="hero">
+        <div class="hero-texto">
+            <span class="saudacao">Portfolio</span>
+            <h1>Maria Clara Velame</h1>
+            <h3>Eu desenvolvo <span class="texto-digitando"></span></h3>
+            <p>
+                Estudante de Engenharia de Software focada em construir soluções lógicas, interfaces modernas e sistemas eficientes.
+            </p>
+
+            <div class="redes-sociais">
+                <a href="https://github.com/mariaclaravelame-lgtm" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/maria-clara-velame-93a189304/" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:mariaclaravelame@gmail.com" title="E-mail"><i class='bx bx-envelope'></i></a>
+            </div>
+
+            <div class="hero-botoes">
+                <a href="#projetos" class="btn-principal">Explorar Projetos</a>
+                <a href="#sobre" class="btn-contorno">Mais sobre mim</a>
+            </div>
+        </div>
+
+        <div class="hero-imagem">
+            <div class="circulo-foto">
+                <img src="imagemPortifolio.jpg" alt="Foto de Maria Clara">
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="sobre" class="secao">
+        <div class="titulo-secao">
+            <span>Conheça minha trajetória</span>
+            <h2>Sobre Mim</h2>
+        </div>
+
+        <div class="sobre-grid">
+            <div class="sobre-img">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Código na tela">
+            </div>
+            <div class="sobre-info">
+                <h3>Estudante de Tecnologia & Desenvolvedora em Formação</h3>
+                <p>
+                    Atualmente curso Engenharia de Software e dedico minha rotina a dominar tanto o raciocínio por trás dos sistemas (Java, lógica, estruturas de dados) quanto a construção de interfaces web responsivas.
+                </p>
+                <div class="dados-rapidos">
+                    <div class="dado-box">
+                        <h4>3+</h4>
+                        <span>Projetos Práticos</span>
+                    </div>
+                    <div class="dado-box">
+                        <h4>Java & Web</h4>
+                        <span>Foco Principal</span>
+                    </div>
+                    <div class="dado-box">
+                        <h4>Salvador, BA</h4>
+                        <span>Localização</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="habilidades" class="secao bg-alternativo">
+        <div class="titulo-secao">
+            <span>Minha Stack</span>
+            <h2>Conhecimentos & Ferramentas</h2>
+        </div>
+
+        <div class="abas-controle">
+            <button class="aba-btn active" data-aba="frontend">Front-End & Web</button>
+            <button class="aba-btn" data-aba="backend">Back-End & Lógica</button>
+            <button class="aba-btn" data-aba="ferramentas">Ferramentas & Outros</button>
+        </div>
+
+        <div class="aba-conteudo active" id="frontend">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='bx bxl-html5'></i>
+                    <h4>HTML5</h4>
+                    <p>Estruturação semântica, formulários e acessibilidade.</p>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-css3'></i>
+                    <h4>CSS3</h4>
+                    <p>Flexbox, CSS Grid, animações e responsividade mobile.</p>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-javascript'></i>
+                    <h4>JavaScript</h4>
+                    <p>Manipulação do DOM, eventos, lógica e interatividade.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="aba-conteudo" id="backend">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='bx bxl-java'></i>
+                    <h4>Java</h4>
+                    <p>Programação Orientada a Objetos, classes e lógica.</p>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bx-data'></i>
+                    <h4>SQL & Banco de Dados</h4>
+                    <p>Modelagem relacional e consultas estruturadas.</p>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bx-chip'></i>
+                    <h4>Sistemas & Algoritmos</h4>
+                    <p>Estruturas de decisão, laços e arquitetura.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="aba-conteudo" id="ferramentas">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='bx bxl-git'></i>
+                    <h4>Git & GitHub</h4>
+                    <p>Controle de versão, commits e branches.</p>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bx-code-block'></i>
+                    <h4>Eclipse & VS Code</h4>
+                    <p>Ambientes de desenvolvimento e depuração.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="projetos" class="secao">
+        <div class="titulo-secao">
+            <span>Portfólio</span>
+            <h2>Meus Projetos</h2>
+        </div>
+
+        <div class="filtros-projetos">
+            <button class="filtro-btn active" data-filtro="todos">Todos</button>
+            <button class="filtro-btn" data-filtro="java">Java</button>
+            <button class="filtro-btn" data-filtro="web">Web (HTML/CSS/JS)</button>
+        </div>
+
+        <div class="projetos-grid">
+            <div class="projeto-card" data-categoria="java">
+                <div class="projeto-img">
+                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=600&q=80" alt="Calculadora em Java">
+                    <div class="projeto-overlay">
+                        <button class="btn-abrir-modal" data-modal="modal-01">Ver Detalhes <i class='bx bx-plus'></i></button>
+                    </div>
+                </div>
+                <div class="projeto-info">
+                    <span class="categoria-tag">Java</span>
+                    <h3>Calculadora em Java</h3>
+                    <p>Sistema de operações matemáticas com estruturas de decisão.</p>
+                </div>
+            </div>
+
+            <div class="projeto-card" data-categoria="web">
+                <div class="projeto-img">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Portfólio Pessoal">
+                    <div class="projeto-overlay">
+                        <button class="btn-abrir-modal" data-modal="modal-02">Ver Detalhes <i class='bx bx-plus'></i></button>
+                    </div>
+                </div>
+                <div class="projeto-info">
+                    <span class="categoria-tag">HTML • CSS • JS</span>
+                    <h3>Portfólio Interativo</h3>
+                    <p>Página pessoal responsiva com navegação por abas e modais.</p>
+                </div>
+            </div>
+
+            <div class="projeto-card" data-categoria="web">
+                <div class="projeto-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Página de Cadastro">
+                    <div class="projeto-overlay">
+                        <button class="btn-abrir-modal" data-modal="modal-03">Ver Detalhes <i class='bx bx-plus'></i></button>
+                    </div>
+                </div>
+                <div class="projeto-info">
+                    <span class="categoria-tag">HTML • CSS</span>
+                    <h3>Página de Cadastro</h3>
+                    <p>Interface de formulário moderno com validações e foco em UX.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="secao bg-alternativo">
+        <div class="titulo-secao">
+            <span>Vamos conversar</span>
+            <h2>Entre em Contato</h2>
+        </div>
+
+        <form class="form-contato" action="https://formsubmit.co/mariaclaravelame@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+           
+            <div class="input-duplo">
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-principal">Enviar Mensagem <i class='bx bx-send'></i></button>
+        </form>
+    </section>
+
+   
+    <footer class="rodape">
+        <p>&copy; 2026 Maria Clara • Engenharia de Software</p>
+        <a href="#inicio" class="btn-topo"><i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
+
+    <div class="modal-fundo" id="modal-01">
+        <div class="modal-caixa">
+            <button class="modal-fechar">&times;</button>
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=800&q=80" alt="Calculadora em Java">
+            <div class="modal-corpo">
+                <span class="categoria-tag">Java • Lógica</span>
+                <h3>Calculadora em Java</h3>
+                <p>Projeto desenvolvido no Eclipse IDE para consolidar fundamentos de programação em Java, incluindo estruturas condicionais e tratamento de entradas.</p>
+                <div class="modal-acoes">
+                    <a href="https://github.com/mariaclaravelame-lgtm" target="_blank" class="btn-principal"><i class='bx bxl-github'></i> Ver Código no GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-fundo" id="modal-02">
+        <div class="modal-caixa">
+            <button class="modal-fechar">&times;</button>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Portfólio Interativo">
+            <div class="modal-corpo">
+                <span class="categoria-tag">Front-End • UI/UX</span>
+                <h3>Portfólio Pessoal Interativo</h3>
+                <p>Aplicação web construída com CSS Grid, Flexbox, animações de transição, sistema de abas em JavaScript puro e modais dinâmicos.</p>
+                <div class="modal-acoes">
+                    <a href="https://github.com" target="_blank" class="btn-principal"><i class='bx bxl-github'></i> Ver Repositório</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-fundo" id="modal-03">
+        <div class="modal-caixa">
+            <button class="modal-fechar">&times;</button>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Sistema de Cadastro">
+            <div class="modal-corpo">
+                <span class="categoria-tag">Web • Formulários</span>
+                <h3>Página de Cadastro</h3>
+                <p>Tela de registro de usuários desenvolvida para praticar semântica de formulários HTML5 e estilização de estados.</p>
+                <div class="modal-acoes">
+                    <a href="https://github.com" target="_blank" class="btn-principal"><i class='bx bxl-github'></i> Ver Código</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
